@@ -208,13 +208,13 @@ body .filigrane {
 
 .valentine, .noemie, .orlane {
     text-align: justify;
-    margin-right: 800px;
+    margin-right: 600px;
     text-justify: inter-word;
 }
 
 .andrea, .hazel {
     text-align: justify;
-    margin-left: 800px;
+    margin-left: 600px;
     text-justify: inter-word;
 }
 
