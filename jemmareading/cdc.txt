@@ -1,0 +1,21 @@
+JEMMAREADING.FR
+
+betacorrection64@gmail.com
+
+COULEURS:
+
+	-> rose pale 
+	-> beige 
+	-> gris 
+	-> noir 
+
+RUBRIQUES:
+
+
+	-> a propos(accueil?)
+		-> Qu’est ce que la bêta lecture? 
+		-> Pour mieux me connaitre : 
+	-> tarifs
+		-> beta lecture complete 
+		-> beta lecture + correction
+	-> commentaires/avis

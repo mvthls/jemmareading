@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+li, a, button {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(21, 0, 0);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 6%;
+    background-color: #D0B8AC /**#FF90BC**/;
+    box-sizing: border-box;
+    margin: -10px;
+    font-family: "Playfair Display", sans-serif;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #EFE5DC;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(29, 26, 61, 1) /**rgba(138, 205, 215, 1)**/;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: rgb(240, 248, 255);
+}
+
+button:hover {
+    background-color: rgba(29, 26, 61, 0.7);
+}
+
+body {
+    background-color: rgba(240, 248, 255, 0.4);
+    font-family: "Playfair Display", sans-serif;
+    margin: 10px;
+    position: relative;
+    overflow: scroll;
+}
+
+.filigrane {
+    filter:alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity:0.5;
+    position: relative;
+    margin-top: 150px;
+}
+
+body .boxbox {
+    position: relative;
+    z-index: 2;   
+}
+
+body .filigrane {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.1;
+}
+
+.beta {
+    margin-right: 400px;
+    margin-left: 20px;
+    text-align: right;
+    position: absolute;
+    margin-top: 30px ;
+    text-justify: inter-word;
+    text-align: justify;
+    position: absolute;
+}
+
+.lib {
+    margin-top: 30px;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+
+.moi {
+    margin-left: 400px;
+    margin-right: 480px;
+    text-align: left;
+    position: absolute;
+    margin-top: 60px ;
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+.write {
+    margin-top: 60px;
+    margin-right: 200px;
+    border-radius: 10px;
+    float: right;
+    position: inherit;  
+}
+
+.tarifs {
+    margin: 1000px;
+}
+
+
+
+/* ---------------------- TARIFS ------------------------- */
+
+
+
+:after
+:before {
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    background-color: rgb(236, 218, 208);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-tarif {
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.euro {
+    font-size: 600%;
+}
+
+.description {
+    font-size: 90%;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    line-height: 1.33;
+    font-weight: 700;
+}
+
+.card-text {
+    margin-top: 0.75rem;
+    line-height: 1.5;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.indications {
+    font-size: 70%;
+}
+
+
+
+/* ---------------------- AVIS ------------------------- */
+
+.avis {
+    padding: 80px;  
+    margin-bottom: 100px;
+}
+
+.valentine, .noemie, .orlane {
+    text-align: justify;
+    margin-right: 800px;
+    text-justify: inter-word;
+}
+
+.andrea, .hazel {
+    text-align: justify;
+    margin-left: 800px;
+    text-justify: inter-word;
+}
+
+.droit {
+    text-align: right;
+}
+
+.text {
+    font-style: italic;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 6%;
+    background-color: #D0B8AC /**#FF90BC**/;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+    display: flex;
+}
+
+
+/* ---------------------- TARIFS ------------------------- */
+
+.contact{
+    margin: 60px;
+}
+
+.titre {
+    text-align: center;
+    margin: 30px;
+}
+
+.instaa {
+    position: absolute;
+    text-align: left;
+}
+
+.instaC {
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.gmaill {
+    position: absolute;
+    text-align: left;
+    margin-left: 18px;
+}
+
+.gC {
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 38px;
+}
