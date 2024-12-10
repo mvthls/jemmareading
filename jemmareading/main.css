@@ -2,127 +2,528 @@
 
 
 
-li, a, button {
-    font-weight: 500;
-    font-size: 18px;
-    color: rgb(21, 0, 0);
-    text-decoration: none;
+/* -------------------------------------------------------  DESKTOP SCREEN  -------------------------------------------------------*/
+
+
+
+
+/* ordinateur */
+@media only screen and (min-width: 992px) {
+    body {
+        width: 100%;
+        background-color: rgba(240, 248, 255, 0.4);
+        font-family: "Playfair Display", sans-serif;
+        margin: 10px;
+        position: relative;
+        overflow: scroll;
+    }
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 6%;
-    background-color: #D0B8AC /**#FF90BC**/;
-    box-sizing: border-box;
-    margin: -10px;
-    font-family: "Playfair Display", sans-serif;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+@media only screen and (min-width: 992px) {
+    li, a, button {
+        font-weight: 500;
+        font-size: 18px;
+        color: rgb(21, 0, 0);
+        text-decoration: none;
+    }
 }
 
-.logo {
-    cursor: pointer;
+@media only screen and (min-width: 992px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 6%;
+        background-color: #D0B8AC /**#FF90BC**/;
+        box-sizing: border-box;
+        margin: -10px;
+        font-family: "Playfair Display", sans-serif;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+    }
 }
 
-.nav__links {
-    list-style: none;
+@media only screen and (min-width: 992px) {
+    .logo {
+        cursor: pointer;
+    }
 }
 
-.nav__links li {
-    display: inline-block;
-    padding: 0px 20px;
+@media only screen and (min-width: 992px) {
+    .nav__links {
+        list-style: none;
+    }
 }
 
-.nav__links li a {
-    transition: all 0.3s ease 0s;
+@media only screen and (min-width: 992px) {
+    .nav__links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
 }
 
-.nav__links li a:hover {
-    color: #EFE5DC;
+@media only screen and (min-width: 992px) {
+    .nav__links li a {
+        transition: all 0.3s ease 0s;
+    }
 }
 
-button {
-    padding: 9px 25px;
-    background-color: rgba(29, 26, 61, 1) /**rgba(138, 205, 215, 1)**/;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: rgb(240, 248, 255);
+    @media only screen and (min-width: 992px) {
+    .nav__links li a:hover {
+        color: #EFE5DC;
+    }
 }
 
-button:hover {
-    background-color: rgba(29, 26, 61, 0.7);
+@media only screen and (min-width: 992px) {
+    button {
+        padding: 9px 25px;
+        background-color: rgba(29, 26, 61, 1) /**rgba(138, 205, 215, 1)**/;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        color: rgb(240, 248, 255);
+    }
 }
 
-body {
-    background-color: rgba(240, 248, 255, 0.4);
-    font-family: "Playfair Display", sans-serif;
-    margin: 10px;
-    position: relative;
-    overflow: scroll;
+@media only screen and (min-width: 992px) {
+    button:hover {
+        background-color: rgba(29, 26, 61, 0.7);
+    }
 }
 
-.filigrane {
-    filter:alpha(opacity=50);
-    opacity: 0.5;
-    -moz-opacity:0.5;
-    position: relative;
-    margin-top: 150px;
+@media only screen and (min-width: 992px) {
+    .filigrane {
+        filter:alpha(opacity=50);
+        opacity: 0.5;
+        -moz-opacity:0.5;
+        position: relative;
+        margin-top: 150px;
+    }
 }
 
-body .boxbox {
-    position: relative;
-    z-index: 2;   
+@media only screen and (min-width: 992px) {
+    body .boxbox {
+        position: relative;
+        z-index: 2;   
+    }
 }
 
-body .filigrane {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.1;
+@media only screen and (min-width: 992px) {
+    body .filigrane {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.1;
+    }
 }
 
-.beta {
-    margin-right: 400px;
-    margin-left: 20px;
-    text-align: right;
-    position: absolute;
-    margin-top: 30px ;
-    text-justify: inter-word;
-    text-align: justify;
-    position: absolute;
+@media only screen and (min-width: 992px) {
+    .beta {
+        margin-right: 400px;
+        margin-left: 20px;
+        text-align: right;
+        position: absolute;
+        margin-top: 30px ;
+        text-justify: inter-word;
+        text-align: justify;
+        position: absolute;
+    }
 }
 
-.lib {
-    margin-top: 30px;
-    margin-left: 200px;
-    border-radius: 10px;
+@media only screen and (min-width: 992px) {
+    .lib {
+        margin-top: 30px;
+        margin-left: 200px;
+        border-radius: 10px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .moi {
+        margin-left: 400px;
+        margin-right: 480px;
+        text-align: left;
+        position: absolute;
+        margin-top: 60px ;
+        text-justify: inter-word;
+        text-align: justify;
+    }
 }
 
-.moi {
-    margin-left: 400px;
-    margin-right: 480px;
-    text-align: left;
-    position: absolute;
-    margin-top: 60px ;
-    text-justify: inter-word;
-    text-align: justify;
+@media only screen and (min-width: 992px) {
+    .write {
+        margin-top: 60px;
+        margin-right: 200px;
+        border-radius: 10px;
+        float: right;
+        position: inherit;  
+    }
 }
 
-.write {
-    margin-top: 60px;
-    margin-right: 200px;
-    border-radius: 10px;
-    float: right;
-    position: inherit;  
+@media only screen and (min-width: 992px) {
+    .tarifs {
+        margin: 1000px;
+    }
 }
 
-.tarifs {
-    margin: 1000px;
+
+/* ---------------------- TARIFS ------------------------- */
+
+
+@media only screen and (min-width: 992px) {
+    :after
+    :before {
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 300px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        max-width: 100%;
+        background-color: rgb(236, 218, 208);
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card-tarif {
+        padding: 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .euro {
+        font-size: 600%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .description {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card-title {
+        font-size: 1.25rem;
+        line-height: 1.33;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card-text {
+        margin-top: 0.75rem;
+        line-height: 1.5;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .indications {
+        font-size: 70%;
+    }
+}
+
+
+/* ---------------------- AVIS ------------------------- */
+
+@media only screen and (min-width: 992px) {
+    .avis {
+        padding: 80px;  
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .valentine, .noemie, .orlane {
+        text-align: justify;
+        margin-right: 40%;
+        text-justify: inter-word;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .andrea, .hazel {
+        text-align: justify;
+        margin-left: 40%;
+        text-justify: inter-word;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .droit {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .text {
+        font-style: italic;
+    }
+}
+
+
+
+/* ---------------------- CONTACT ------------------------- */
+
+
+
+@media only screen and (min-width: 992px) {
+    .contact{
+        margin: 60px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .titre {
+        text-align: center;
+        margin: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .instaa {
+        position: absolute;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .instaC {
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .gmaill {
+        position: absolute;
+        text-align: left;
+        margin-left: 18px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .gC {
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 38px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------  SMARTPHONE SCREEN  -------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    body {
+        max-width: fit-content;
+        width: 100%;
+        background-color: rgba(240, 248, 255, 0.4);
+        font-family: "Playfair Display", sans-serif;
+        margin: 10px;
+        position: relative;
+        overflow: scroll;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    li, a, button {
+        font-weight: 500;
+        font-size: 16px;
+        color: rgb(21, 0, 0);
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 3%;
+        background-color: #D0B8AC /**#FF90BC**/;
+        box-sizing: border-box;
+        margin: -10px;
+        font-family: "Playfair Display", sans-serif;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .nav__links {
+        list-style: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .nav__links li {
+        display: inline-block;
+        padding: 4px 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .nav__links li a {
+        transition: all 0.3s ease 0s;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .nav__links li a:hover {
+        color: #EFE5DC;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    button {
+        padding: 9px 25px;
+        background-color: rgba(29, 26, 61, 1) /**rgba(138, 205, 215, 1)**/;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        color: rgb(240, 248, 255);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    button:hover {
+        background-color: rgba(29, 26, 61, 0.7);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .filigrane {
+        filter:alpha(opacity=50);
+        opacity: 0.5;
+        -moz-opacity:0.5;
+        position: relative;
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body .boxbox {
+        position: relative;
+        z-index: 2;   
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body .filigrane {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.1;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .beta {
+        margin-left: 2px;
+        margin-top: 10px;
+        position: flex;
+        text-justify: inter-word;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .lib {
+        position: flex;
+        margin-top: 3px;
+        margin-left: 2px;
+        margin-right: 2px;
+        border-radius: 10px;
+        align-items: center;
+        float: unset;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .moi {
+        margin-left: 2px;
+        margin-top: 10px;
+        margin-right: 2px;
+        position: flex;
+        text-justify: inter-word;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .write {
+        position: flex;
+        margin-top: 3px;
+        margin-left: 2px;
+        border-radius: 10px;
+        align-items: center;
+        float: unset;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .tarifs {
+        margin: 1000px;
+    }
 }
 
 
@@ -131,145 +532,182 @@ body .filigrane {
 
 
 
-:after
-:before {
-    box-sizing: border-box;
+
+@media only screen and (max-width: 767px) {
+    :after
+    :before {
+        box-sizing: border-box;
+    }
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 300px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    max-width: 100%;
-    background-color: rgb(236, 218, 208);
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1rem;
+@media only screen and (max-width: 767px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 300px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        max-width: 100%;
+        background-color: rgb(236, 218, 208);
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem;
+    }
 }
 
-.card-body {
-    padding: 1.5rem;
+@media only screen and (max-width: 767px) {
+    .card-body {
+        padding: 1.5rem;
+        margin-bottom: 6px;
+    }
 }
 
-.card-tarif {
-    padding: 1.5rem;
-    align-items: center;
-    text-align: center;
+@media only screen and (max-width: 767px) {
+    .card-tarif {
+        padding: 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
 }
 
-.euro {
-    font-size: 600%;
+@media only screen and (max-width: 767px) {
+    .euro {
+        font-size: 600%;
+    }
 }
 
-.description {
-    font-size: 90%;
+@media only screen and (max-width: 767px) {
+    .description {
+        font-size: 90%;
+    }
 }
 
-.card-title {
-    font-size: 1.25rem;
-    line-height: 1.33;
-    font-weight: 700;
+@media only screen and (max-width: 767px) {
+    .card-title {
+        font-size: 1.25rem;
+        line-height: 1.33;
+        font-weight: 700;
+    }
 }
 
-.card-text {
-    margin-top: 0.75rem;
-    line-height: 1.5;
+@media only screen and (max-width: 767px) {
+    .card-text {
+        margin-top: 0.75rem;
+        line-height: 1.5;
+    }
 }
 
-.container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
+@media only screen and (max-width: 767px) {
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
 }
 
-.indications {
-    font-size: 70%;
+@media only screen and (max-width: 767px) {
+    .indications {
+        font-size: 70%;
+    }
 }
 
 
 
 /* ---------------------- AVIS ------------------------- */
 
-.avis {
-    padding: 80px;  
-    margin-bottom: 100px;
+
+
+@media only screen and (max-width: 767px) {
+    .avis {
+        padding: 10px;  
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 }
 
-.valentine, .noemie, .orlane {
-    text-align: justify;
-    margin-right: 600px;
-    text-justify: inter-word;
+@media only screen and (max-width: 767px) {
+    .valentine, .noemie, .orlane {
+        text-align: justify;
+        margin-right: 10%;
+        text-justify: inter-word;
+    }
 }
 
-.andrea, .hazel {
-    text-align: justify;
-    margin-left: 600px;
-    text-justify: inter-word;
+@media only screen and (max-width: 767px) {
+    .andrea, .hazel {
+        text-align: justify;
+        margin-left: 10%;
+        text-justify: inter-word;
+    }
 }
 
-.droit {
-    text-align: right;
+@media only screen and (max-width: 767px) {
+    .droit {
+        text-align: right;
+    }
 }
 
-.text {
-    font-style: italic;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 6%;
-    background-color: #D0B8AC /**#FF90BC**/;
-    box-sizing: border-box;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
-    display: flex;
+@media only screen and (max-width: 767px) {
+    .text {
+        font-style: italic;
+    }
 }
 
 
-/* ---------------------- TARIFS ------------------------- */
 
-.contact{
-    margin: 60px;
+/* ---------------------- CONTACT ------------------------- */
+
+
+
+@media only screen and (max-width: 767px) {
+    .contact{
+        margin: 6px;
+    }
 }
 
-.titre {
-    text-align: center;
-    margin: 30px;
+@media only screen and (max-width: 767px) {
+    .titre {
+        text-align: center;
+        margin: 30px;
+    }
 }
 
-.instaa {
-    position: absolute;
-    text-align: left;
+@media only screen and (max-width: 767px) {
+    .instaa {
+        position: absolute;
+        text-align: left;
+    }
 }
 
-.instaC {
-    text-align: left;
-    margin-left: 100px;
-    margin-top: 50px;
+@media only screen and (max-width: 767px) {
+    .instaC {
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 35px;
+    }
 }
 
-.gmaill {
-    position: absolute;
-    text-align: left;
-    margin-left: 18px;
+@media only screen and (max-width: 767px) {
+    .gmaill {
+        position: absolute;
+        text-align: left;
+        margin-left: 18px;
+    }
 }
 
-.gC {
-    text-align: left;
-    margin-left: 100px;
-    margin-top: 38px;
+@media only screen and (max-width: 767px) {
+    .gC {
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 22px;
+    }
 }
