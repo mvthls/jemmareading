@@ -105,6 +105,7 @@
     body .boxbox {
         position: relative;
         z-index: 2;   
+        margin-top: 30px;
     }
 }
 
@@ -120,44 +121,62 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .beta {
-        margin-right: 400px;
-        margin-left: 20px;
-        text-align: right;
-        position: absolute;
-        margin-top: 30px ;
-        text-justify: inter-word;
-        text-align: justify;
-        position: absolute;
+    :after
+    :before {
+        box-sizing: border-box;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .lib {
-        margin-top: 30px;
-        margin-left: 200px;
+    .cardA {
+        display: flex;
+        flex-basis: 300px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        max-width: 100%;
+        background-color: rgb(236, 218, 208);
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
         border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem;
     }
 }
+
 @media only screen and (min-width: 992px) {
-    .moi {
-        margin-left: 400px;
-        margin-right: 480px;
+    .card-bodyA {
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card-textA {
+        line-height: 1.5;
         text-align: left;
-        position: absolute;
-        margin-top: 60px ;
-        text-justify: inter-word;
-        text-align: justify;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .write {
-        margin-top: 60px;
-        margin-right: 200px;
-        border-radius: 10px;
-        float: right;
-        position: inherit;  
+    .card-textB {
+        line-height: 1.5;
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card-titleB {
+        line-height: 1.5;
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .containerA {
+        position: relative;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 100px;
     }
 }
 
@@ -478,45 +497,54 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .beta {
-        margin-left: 2px;
-        margin-top: 10px;
-        position: flex;
-        text-justify: inter-word;
-        text-align: justify;
+    :after
+    :before {
+        box-sizing: border-box;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .lib {
-        position: flex;
-        margin-top: 3px;
-        margin-left: 2px;
-        margin-right: 2px;
+    .cardA {
+        display: flex;
+        flex-basis: 300px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        max-width: 100%;
+        background-color: rgb(236, 218, 208);
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
         border-radius: 10px;
-        align-items: center;
-        float: unset;
-    }
-}
-@media only screen and (max-width: 767px) {
-    .moi {
-        margin-left: 2px;
-        margin-top: 10px;
-        margin-right: 2px;
-        position: flex;
-        text-justify: inter-word;
-        text-align: justify;
+        overflow: hidden;
+        margin: 1rem;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .write {
-        position: flex;
-        margin-top: 3px;
-        margin-left: 2px;
-        border-radius: 10px;
+    .card-bodyA {
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .descriptionA {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .card-textA {
+        margin-top: 0.75rem;
+        line-height: 1.5;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .containerA {
+        position: absolute;
+        width: 100%;
         align-items: center;
-        float: unset;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
     }
 }
 
@@ -711,3 +739,349 @@
         margin-top: 22px;
     }
 }
+
+/*
+ -------------------------------------------------------  TABLETTE VERTIVCAL SCREEN -------------------------------------------------------
+
+
+
+
+/* tablette 
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    body {
+        width: 100%;
+        background-color: rgba(240, 248, 255, 0.4);
+        font-family: "Playfair Display", sans-serif;
+        margin: 10px;
+        position: relative;
+        overflow: scroll;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    li, a, button {
+        font-weight: 500;
+        font-size: 18px;
+        color: rgb(21, 0, 0);
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 6%;
+        background-color: #D0B8AC ;
+        box-sizing: border-box;
+        margin: -10px;
+        font-family: "Playfair Display", sans-serif;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .logo {
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .nav__links {
+        list-style: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .nav__links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .nav__links li a {
+        transition: all 0.3s ease 0s;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .nav__links li a:hover {
+        color: #EFE5DC;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    button {
+        padding: 9px 25px;
+        background-color: rgba(29, 26, 61, 1) /**rgba(138, 205, 215, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        color: rgb(240, 248, 255);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    button:hover {
+        background-color: rgba(29, 26, 61, 0.7);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .filigrane {
+        filter:alpha(opacity=50);
+        opacity: 0.5;
+        -moz-opacity:0.5;
+        position: relative;
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    body .boxbox {
+        position: relative;
+        z-index: 2;   
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    body .filigrane {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.1;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .beta {
+        margin-right: 300px;
+        margin-left: 2px;
+        text-align: right;
+        position: fixed;
+        margin-top: 350px ;
+        text-justify: inter-word;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .lib {
+        margin-top: 3px;
+        margin-left: 2px;
+        border-radius: 10px;
+        float: left;
+        position: absolute;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .moi {
+        margin-left: 280px;
+        margin-right: 48px;
+        text-align: left;
+        position: absolute;
+        margin-top: 6px ;
+        text-justify: inter-word;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .write {
+        margin-top: 300px;
+        margin-right: 20px;
+        border-radius: 10px;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .tarifs {
+        margin: 1000px;
+    }
+}
+
+
+/* ---------------------- TARIFS ------------------------- 
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    :after
+    :before {
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 300px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        max-width: 100%;
+        background-color: rgb(236, 218, 208);
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .card-body {
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .card-tarif {
+        padding: 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .euro {
+        font-size: 600%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .description {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .card-title {
+        font-size: 1.25rem;
+        line-height: 1.33;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .card-text {
+        margin-top: 0.75rem;
+        line-height: 1.5;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .indications {
+        font-size: 70%;
+    }
+}
+
+
+/* ---------------------- AVIS ------------------------- 
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .avis {
+        padding: 80px;  
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .valentine, .noemie, .orlane {
+        text-align: justify;
+        margin-right: 20%;
+        text-justify: inter-word;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .andrea, .hazel {
+        text-align: justify;
+        margin-left: 20%;
+        text-justify: inter-word;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {   
+    .droit {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .text {
+        font-style: italic;
+    }
+}
+
+
+
+/* ---------------------- CONTACT ------------------------- 
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .contact{
+        margin: 60px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .titre {
+        text-align: center;
+        margin: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .instaa {
+        position: absolute;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .instaC {
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .gmaill {
+        position: absolute;
+        text-align: left;
+        margin-left: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {    
+    .gC {
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 38px;
+    }
+}
+*/
